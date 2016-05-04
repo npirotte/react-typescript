@@ -33,8 +33,6 @@ Please use npm command instead of native script commands.
 
 Run unit test
 
-Lint the app code with eslint.
-
 ```bash
 > npm run build
 ```

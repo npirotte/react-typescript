@@ -1,11 +1,9 @@
 /// <reference path="../../typings/tsd.d.ts" />
 
-import * as React from 'react'
+import * as React from "react";
+import Text from "./Text.tsx";
 
-interface P {
-  
-}
-
+interface P {}
 interface S {
   inputValue: string
 }
@@ -31,8 +29,8 @@ export default class HelloForm extends React.Component<P, S> {
     return (
       <div>
         <input placeholder="Type something" className="form-control" value={this.state.inputValue} onChange={this.handleChange} />
-        <p>You typed: {this.state.inputValue}</p>
-        <p>Char nbr: {this.state.inputValue.length}</p>
+        <Text text={"You typed: " + this.state.inputValue} />
+        <Text text={"Char nbr: " + this.state.inputValue.length} />
       </div>
     );
   }
