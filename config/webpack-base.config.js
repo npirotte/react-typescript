@@ -7,7 +7,7 @@ const path = require('path')
 
 module.exports = new WebpackConfig().merge({
   entry: {
-    app: ['./src/app.jsx']
+    app: ['./src/app.ts']
   },
   output: {
     path: path.resolve(__dirname, '../build'),
@@ -22,16 +22,16 @@ module.exports = new WebpackConfig().merge({
   module: {
     preLoaders: [
       {
-        test: /\.js(x?)$/,
+        test: /\.ts(x?)$/,
         exclude: /node_modules/,
-        loaders: ['eslint']
+        loaders: ['tslint']
       }
     ],
     loaders: [
       {
-        test: /\.js(x?)$/,
+        test: /\.ts(x?)$/,
         exclude: /node_modules/,
-        loaders: ['babel']
+        loaders: ['ts']
       },
       {
         test: /\.html$/,

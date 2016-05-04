@@ -10,7 +10,7 @@ module.exports = function (config) {
     // list of files / patterns to load in the browser
     files: [
       './node_modules/es6-promise/dist/es6-promise.js',
-      './src/**/specs/*.spec.jsx'
+      './src/**/specs/*.spec.tsx'
     ],
 
     // list of files to exclude
@@ -19,7 +19,7 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      './src/**/specs/*.spec.jsx': ['webpack', 'sourcemap']
+      './src/**/specs/*.spec.tsx': ['webpack', 'sourcemap']
     },
 
     // test results reporter to use

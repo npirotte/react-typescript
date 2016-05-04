@@ -1,6 +1,8 @@
-import TestUtils from 'react-addons-test-utils'
+/// <reference path="../../../typings/tsd.d.ts" />
+
+import * as TestUtils from 'react-addons-test-utils'
 import * as React from 'react' // eslint-disable-line
-import App from '../App.jsx' // eslint-disable-line
+import App from '../App.tsx' // eslint-disable-line
 
 describe('App', () => {
   it('Should be definde', () => {

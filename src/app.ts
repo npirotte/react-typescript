@@ -1,4 +1,4 @@
-// file : /src/app.js
+/// <reference path="../typings/tsd.d.ts" />
 
 /**
  * This is our application entry point
@@ -6,7 +6,7 @@
 import * as React from 'react'
 import {render} from 'react-dom'
 
-import App from './components/App.jsx'
+import App from './components/App.tsx'
 
 const el = document.getElementById('app')
 

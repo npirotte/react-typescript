@@ -7,9 +7,9 @@ module.exports = new WebpackConfig().merge({
 
   module: {
     loaders: [{
-      test: /\.js(x?)$/,
+      test: /\.ts(x?)$/,
       exclude: /node_modules/,
-      loaders: ['babel']
+      loaders: ['ts']
     }]
   }
 })
