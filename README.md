@@ -6,11 +6,7 @@
 
 ## Summary
 
-This project is a little starter showing how to set up a flexible and maintenable webpack configuration
-for building javascript project.
-
-Article available here on my [developer blog](http://blog.npirotte.be/a-strong-development-webpack-configuration/)
-
+This project is a little starter showing how to set use React along with typescript.
 ## Technologies
 
 ### Building
@@ -18,10 +14,6 @@ Article available here on my [developer blog](http://blog.npirotte.be/a-strong-d
 Webpack with Babel loader for javascript and css & style loaders for stylesheets.
 
 The configuration is managed with [webpack-config](https://www.npmjs.com/package/webpack-config).
-
-### Linting
-
-EsLint with standat code style ruleset.
 
 ### Testing
 
