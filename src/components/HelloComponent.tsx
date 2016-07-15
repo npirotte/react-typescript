@@ -3,11 +3,11 @@
 import * as React from "react";
 
 interface P extends React.Props<{}> {
-  title: string
+  title: string;
 }
 
 interface S {
-  timer: number
+  timer: number;
 }
 
 export default class HelloComponent extends React.Component<P, S> {
@@ -16,7 +16,7 @@ export default class HelloComponent extends React.Component<P, S> {
   incrementTimer: () => void = () => {
     this.setState({
       timer: this.state.timer + 1
-    })
+    });
   };
   
   constructor (props: P) {
@@ -24,9 +24,13 @@ export default class HelloComponent extends React.Component<P, S> {
     
     this.state = {
       timer: 0
-    }
+    };
     
     this.interval = window.setInterval(this.incrementTimer, 1000);
+  }
+
+  componentWillUnmount (): void {
+    window.clearInterval(this.interval);
   }
   
   render (): React.ReactElement<{}> {

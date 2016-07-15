@@ -3,15 +3,15 @@
 /**
  * This is our application entry point
  */
-import * as React from 'react'
-import {render} from 'react-dom'
+import * as React from "react";
+import {render} from "react-dom";
 
-import App from './components/App.tsx'
+import App from "./components/App.tsx";
 
-const el = document.getElementById('app')
+const el: HTMLElement = document.getElementById("app");
 
 if (!el) {
-  throw new Error('No element #app provided')
+  throw new Error("No element #app provided");
 }
 
-render(React.createElement(App), el)
+render(React.createElement(App), el);

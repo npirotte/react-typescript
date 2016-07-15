@@ -5,26 +5,26 @@ import Text from "./Text.tsx";
 
 interface P {}
 interface S {
-  inputValue: string
+  inputValue: string;
 }
 
 export default class HelloForm extends React.Component<P, S> {
-  handleChange: (e: React.FormEvent) => void = (e: React.FormEvent) => {
+  handleChange = (e: React.FormEvent): void => {
     const elm = e.target as HTMLInputElement;
-    
+
     this.setState({
-      inputValue: elm.value 
+      inputValue: elm.value
     });
   }
-  
+
   constructor () {
     super();
-    
+
     this.state = {
-      inputValue: ''
-    }
+      inputValue: ""
+    };
   }
-  
+
   render (): React.ReactElement<{}> {
     return (
       <div>

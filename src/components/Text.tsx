@@ -1,11 +1,11 @@
 import * as React from "react";
 
-interface P extends React.Props<{}> {
-  text: string
+interface IP extends React.Props<{}> {
+  text: string;
 }
 
-export default (props: P): React.ReactElement<P> => {
+export default (props): React.ReactElement<IP> => {
   return (
-    <p>{props.text}</p>  
+    <p>{props.text}</p>
   );
-}
+};
